@@ -38,19 +38,26 @@
       <form action="post">
         <h3>Vuelos</h3>
         <span>Ida y vuelta</span>
-        <button>sentido</button>
-        <select name="origen">
+        <section>
+          <button type="reset">sentido</button>
+        <label for="ORIGEN">ORIGEN </label>
+          <select name="origen">
           <option value="mvd"> MONTEVIDEO (MVD)</option>
+          <option value="bs"> BUENOS AIRES (BS)</option>
+          <option value="PDE"> PUNTA DEL ESTE (PDE)</option>
         </select>
+        <label for="ORIGEN">DESTINO </label>
         <select name="destino">
           <option value="PCA"> PUNTA CANA (PCA)</option>
           <option value="CNC"> CANCUN (CNC)</option>
           <option value="RMA"> RIVERA MAYA (RMA)</option>
           <option value="ARU"> ARUBA (ARU)</option>
         </select>
-
+        <label for="FECHA"> FECHA SALIDA</label>
         <input type="date" name="ida" />
+        <label for="FECHA"> FECHA REGRESO</label>
         <input type="date" name="vuelta" />
+        <label for="PERSONAS"> PERSONAS</label>
         <input type="number" name="pasajeros" />
         <button type="submit">BUSCAR</button>
       </form>
